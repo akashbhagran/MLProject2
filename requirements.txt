@@ -6,3 +6,4 @@ jupyterlab==4.0.9
 jupyter==1.0.0
 fastapi==0.109.2
 uvicorn==0.27.1
+awscli==1.32.46
