@@ -11,3 +11,5 @@ RUN pip install -r requirements.txt
 SHELL ["conda", "run", "--name", "images", "/bin/bash", "-c"]
 
 ENTRYPOINT [ "conda", "run", "--name", "images", "python", "model/train.py" ]
+
+EXPOSE 8090
