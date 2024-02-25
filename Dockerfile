@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 
 SHELL ["conda", "run", "--name", "images", "/bin/bash", "-c"]
 
-EXPOSE 8090
+EXPOSE 80
 
-CMD ["conda", "run", "--name", "images", "uvicorn", "model.train:app", "--host", "0.0.0.0", "--port", "8090"]
+CMD ["conda", "run", "--name", "images", "uvicorn", "model.train:app", "--host", "0.0.0.0", "--port", "80"]
