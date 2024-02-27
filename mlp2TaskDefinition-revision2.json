@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:587772403809:task-definition/trial2:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:587772403809:task-definition/mlp2TaskDefinition:2",
     "containerDefinitions": [
         {
             "name": "mlp2container",
@@ -32,10 +32,10 @@
             }
         }
     ],
-    "family": "trial2",
-    "executionRoleArn": "arn:aws:iam::587772403809:role/example_task",
+    "family": "mlp2TaskDefinition",
+    "executionRoleArn": "arn:aws:iam::587772403809:role/mlp2Role",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -78,7 +78,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-02-25T21:52:46.060Z",
+    "registeredAt": "2024-02-27T14:20:35.011Z",
     "registeredBy": "arn:aws:iam::587772403809:root",
     "tags": []
 }
