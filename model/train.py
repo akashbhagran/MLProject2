@@ -24,7 +24,10 @@ logreg.fit(X_train, y_train)
 async def get_accuracy():
     train_accuracy = logreg.score(X_train, y_train)
     test_accuracy = logreg.score(X_test, y_test)
+    print()
     return {
         "train_accuracy": train_accuracy,
-        "test_accuracy": test_accuracy
-    }
+        "test_accuracy": test_accuracy,
+        "test_accuracy2": test_accuracy,
+        "type": str(type(X_train[0][0]))
+        }

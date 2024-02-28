@@ -13,9 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run:
-          pip install pytest
-          pip install torchvision
-          pip install torch
+          pip install -r requirements.txt
+          
       - run: pytest
 
   format-code:
