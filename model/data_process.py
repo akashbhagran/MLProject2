@@ -17,6 +17,7 @@ class get_data():
         self.y = fruits['fruit_label']
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y, random_state=0)
         
+        
     def transform(self) -> None:
         
         scaler = MinMaxScaler()
