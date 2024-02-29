@@ -13,24 +13,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run:
-          pip install pytest
-          pip install torchvision
-          pip install torch
+          pip install -r requirements.txt
       - run: pytest
 
-  format-code:
-
+      
+  docker:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-      - run: pip install black
-      - run: chmod +x ./reformat.sh
-      - run: source reformat.sh
-      - run: echo ${GITHUB_REF##*/}
-      - run: git add .
-      - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      - run: git config --global user.name "github-actions[bot]"
-      - run: git commit -m "Auto-Reformat"
-      - run: echo "git fetch origin ${GITHUB_REF##*/}"
-      - run: git push origin ${GITHUB_REF##*/}
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{secrets.DOCKERHUB_USERNAME}}
+          password: ${{secrets.DOCKERHUB_TOKEN}}
+      -
+        name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: akashbhagran94/mlp2:latest

@@ -1,0 +1,5 @@
+{
+    "penalty": "l2",
+    "fit_intercept": true,
+    "C": 1.0
+}

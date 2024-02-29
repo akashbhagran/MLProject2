@@ -1,0 +1,18 @@
+- CI
+
+Integration tests
+Docker build
+Docker vulnerability tests
+write unit tests and run in CI
+
+- Data
+
+Make container that contiuously produces fresh data for simulation
+Create a run.py container which runs data and builds - must retrieve data from other docker container, display results on mlflow.
+
+- Ops
+
+Add mlflow to new project
+Add model versioning, save as pickle file
+retrain under the right conditions automatically
+I
