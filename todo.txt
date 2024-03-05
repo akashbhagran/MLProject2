@@ -1,7 +1,7 @@
 - CI
 
-Integration tests
-Docker build
+Integration tests - just mention it.
+Docker build and push
 Docker vulnerability tests
 write unit tests and run in CI
 
