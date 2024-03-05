@@ -32,7 +32,7 @@ def delete_oldest_fruit():
 def make_fruit():
     r = np.random.randint(1, 5)
 
-    if get_fruit_count() >= 1000:
+    if get_fruit_count() >= 3000:
         delete_oldest_fruit()
 
     if r == 1:
@@ -66,10 +66,12 @@ def get_fruit_count():
     return cursor.fetchone()[0]
 
 # Continuously insert fruits into the database
-while True:
-    make_fruit()
-    conn.commit()
-    time.sleep(1)  # Adjust the delay as needed
 
-# Close the connection
-conn.close()
+if __name__ == '__main__':
+    while True:
+        make_fruit()
+        conn.commit()
+        time.sleep(0.25)  # Adjust the delay as needed
+
+    # Close the connection
+    conn.close()
