@@ -16,6 +16,30 @@ jobs:
           pip install -r requirements.txt
       - run: pytest
 
+  format-code:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: check for modified files
+        id: git-check
+        run: echo "modified=$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)" >> $GITHUB_OUTPUT
+
+      - name: check and format
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          pip install black chmod +x ./reformat.sh
+          source reformat.sh
+          echo ${GITHUB_REF##*/}
+          git add .
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name "github-actions[bot]"
+          git commit -m "Auto-Reformat"
+          echo "git fetch origin ${GITHUB_REF##*/}"
+          git push origin ${GITHUB_REF##*/}
+
       
   docker:
     runs-on: ubuntu-latest

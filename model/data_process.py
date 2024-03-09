@@ -2,10 +2,11 @@
 data.py
 This module loads in data.
 """
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-import os
+
 
 class get_data():
 
