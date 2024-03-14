@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/95165225a40b45a891ae08bf51704ffd/artifacts
+deleted_time: 1710244775609
+end_time: 1710242295480
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 95165225a40b45a891ae08bf51704ffd
+run_name: smiling-bee-29
+run_uuid: 95165225a40b45a891ae08bf51704ffd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242295395
+status: 3
+tags: []
+user_id: akash

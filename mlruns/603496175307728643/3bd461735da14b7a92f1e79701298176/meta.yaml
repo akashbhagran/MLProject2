@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/3bd461735da14b7a92f1e79701298176/artifacts
+deleted_time: 1710242337930
+end_time: 1710242300194
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 3bd461735da14b7a92f1e79701298176
+run_name: youthful-skunk-479
+run_uuid: 3bd461735da14b7a92f1e79701298176
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242300105
+status: 3
+tags: []
+user_id: akash

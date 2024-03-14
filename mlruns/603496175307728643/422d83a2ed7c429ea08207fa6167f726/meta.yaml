@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/422d83a2ed7c429ea08207fa6167f726/artifacts
+deleted_time: 1710242337702
+end_time: 1710242305256
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 422d83a2ed7c429ea08207fa6167f726
+run_name: abrasive-snail-928
+run_uuid: 422d83a2ed7c429ea08207fa6167f726
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242305155
+status: 3
+tags: []
+user_id: akash

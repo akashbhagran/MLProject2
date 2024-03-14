@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/0c8339e3031841d1abe725148522cbb0/artifacts
+deleted_time: 1710242337537
+end_time: 1710242309966
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 0c8339e3031841d1abe725148522cbb0
+run_name: unique-mink-311
+run_uuid: 0c8339e3031841d1abe725148522cbb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242309869
+status: 3
+tags: []
+user_id: akash

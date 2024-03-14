@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/dcff5f891c214d63bddff8e7c2509b00/artifacts
+deleted_time: 1710242337456
+end_time: 1710242311403
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: dcff5f891c214d63bddff8e7c2509b00
+run_name: unruly-chimp-406
+run_uuid: dcff5f891c214d63bddff8e7c2509b00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242311247
+status: 3
+tags: []
+user_id: akash

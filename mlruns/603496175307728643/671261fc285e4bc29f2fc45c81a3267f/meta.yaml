@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/671261fc285e4bc29f2fc45c81a3267f/artifacts
+deleted_time: 1710242337833
+end_time: 1710242301421
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 671261fc285e4bc29f2fc45c81a3267f
+run_name: rare-penguin-685
+run_uuid: 671261fc285e4bc29f2fc45c81a3267f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242301342
+status: 3
+tags: []
+user_id: akash

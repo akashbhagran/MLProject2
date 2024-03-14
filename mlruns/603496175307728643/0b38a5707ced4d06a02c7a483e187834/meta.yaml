@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/0b38a5707ced4d06a02c7a483e187834/artifacts
+deleted_time: 1710242337428
+end_time: 1710242312014
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 0b38a5707ced4d06a02c7a483e187834
+run_name: powerful-stag-182
+run_uuid: 0b38a5707ced4d06a02c7a483e187834
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242311901
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/d25409ddb50743028352f1bfd4c54fd0/artifacts
+deleted_time: 1710244775577
+end_time: 1710242296200
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: d25409ddb50743028352f1bfd4c54fd0
+run_name: selective-boar-370
+run_uuid: d25409ddb50743028352f1bfd4c54fd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242296106
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/5291a165c427433b85a43bcaca499272/artifacts
+deleted_time: 1710242337940
+end_time: 1710242300337
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 5291a165c427433b85a43bcaca499272
+run_name: sincere-asp-652
+run_uuid: 5291a165c427433b85a43bcaca499272
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242300235
+status: 3
+tags: []
+user_id: akash

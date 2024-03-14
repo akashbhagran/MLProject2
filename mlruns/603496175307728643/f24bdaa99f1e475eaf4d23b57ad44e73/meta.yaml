@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/f24bdaa99f1e475eaf4d23b57ad44e73/artifacts
+deleted_time: 1710244775522
+end_time: 1710242297303
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: f24bdaa99f1e475eaf4d23b57ad44e73
+run_name: serious-fly-941
+run_uuid: f24bdaa99f1e475eaf4d23b57ad44e73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242297218
+status: 3
+tags: []
+user_id: akash

@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:latest
 
-RUN conda create -n simulate_env python=3.12.1 -y
+RUN conda create -n simulate_env python=3.11.5 -y
 
 ENV PATH /opt/conda/envs/simulate_env/bin:$PATH
 
@@ -12,4 +12,4 @@ WORKDIR /simulate
 
 SHELL ["conda", "run", "--name", "simulate_env", "/bin/bash", "-c"]
 
-CMD ["conda", "run", "--name", "simulate_env", "python", "generate_data.py"]
+CMD ["conda", "run", "--name", "simulate_env", "python", "generate_data2.py"]

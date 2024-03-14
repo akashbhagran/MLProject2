@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/84f6d38d8a8f4faebf7db4434e170ead/artifacts
+deleted_time: 1710242337609
+end_time: 1710242307945
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 84f6d38d8a8f4faebf7db4434e170ead
+run_name: loud-hawk-422
+run_uuid: 84f6d38d8a8f4faebf7db4434e170ead
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242307806
+status: 3
+tags: []
+user_id: akash

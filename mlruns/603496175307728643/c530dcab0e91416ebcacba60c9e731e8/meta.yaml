@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/c530dcab0e91416ebcacba60c9e731e8/artifacts
+deleted_time: 1710242337527
+end_time: 1710242310121
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: c530dcab0e91416ebcacba60c9e731e8
+run_name: fun-frog-475
+run_uuid: c530dcab0e91416ebcacba60c9e731e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242309997
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  celery_worker:
+    build: ./simulate  # Path to the directory with the Dockerfile for Celery
+    volumes:
+      - ./common:/app/common  # Ensure tasks.py is accessible
+      - ./simulate:/app/simulate  # Ensure your data generator script is accessible
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  data_generator:
+    build: ./simulate
+    command: python simulate/data_generator_script.py  # Adjust this to your actual script name
+    volumes:
+      - ./common:/app/common
+      - ./simulate:/app/simulate
+
+  data_reader:
+    build: ./run
+    command: python run/data_reader_script.py  # Adjust this to your actual script name
+    volumes:
+      - ./common:/app/common
+      - ./run:/app/run
+      - ./data:/app/data
+    depends_on:
+      - celery_worker
+
+
+

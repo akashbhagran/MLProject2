@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/0763f6e04cb64a94b9ffb3f3fc1a447f/artifacts
+deleted_time: 1710242337587
+end_time: 1710242308706
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 0763f6e04cb64a94b9ffb3f3fc1a447f
+run_name: indecisive-yak-662
+run_uuid: 0763f6e04cb64a94b9ffb3f3fc1a447f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242308585
+status: 3
+tags: []
+user_id: akash

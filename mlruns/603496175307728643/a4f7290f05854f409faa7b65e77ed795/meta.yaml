@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/a4f7290f05854f409faa7b65e77ed795/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: active
+run_id: a4f7290f05854f409faa7b65e77ed795
+run_name: ambitious-ox-586
+run_uuid: a4f7290f05854f409faa7b65e77ed795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710246337575
+status: 1
+tags: []
+user_id: akash

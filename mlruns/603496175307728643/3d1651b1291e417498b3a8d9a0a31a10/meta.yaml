@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/3d1651b1291e417498b3a8d9a0a31a10/artifacts
+deleted_time: 1710242337624
+end_time: 1710242307469
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 3d1651b1291e417498b3a8d9a0a31a10
+run_name: nimble-bird-838
+run_uuid: 3d1651b1291e417498b3a8d9a0a31a10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242307364
+status: 3
+tags: []
+user_id: akash

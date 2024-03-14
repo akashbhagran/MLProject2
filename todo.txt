@@ -2,6 +2,7 @@
 
 Integration tests - just mention it.
 Docker build and push - y
+Reformat code.
 Docker vulnerability tests
 write unit tests and run in CI - y
 
@@ -16,4 +17,3 @@ run model continuously in container.
 Add mlflow to new project
 Add model versioning, save as pickle file in mlflow
 retrain under the right conditions automatically
-I

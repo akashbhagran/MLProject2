@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/0017702b4a794907a11bf95a8a129d62/artifacts
+deleted_time: 1710244775668
+end_time: 1710242294433
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 0017702b4a794907a11bf95a8a129d62
+run_name: resilient-perch-233
+run_uuid: 0017702b4a794907a11bf95a8a129d62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242294354
+status: 3
+tags: []
+user_id: akash

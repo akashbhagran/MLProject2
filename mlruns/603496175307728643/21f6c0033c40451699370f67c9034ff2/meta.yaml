@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/21f6c0033c40451699370f67c9034ff2/artifacts
+deleted_time: 1710242337910
+end_time: 1710242300445
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 21f6c0033c40451699370f67c9034ff2
+run_name: exultant-skink-307
+run_uuid: 21f6c0033c40451699370f67c9034ff2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242300360
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/c935cb7fdc324841b6be7ac1d808ee2f/artifacts
+deleted_time: 1710242337596
+end_time: 1710242308385
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: c935cb7fdc324841b6be7ac1d808ee2f
+run_name: able-ray-371
+run_uuid: c935cb7fdc324841b6be7ac1d808ee2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242308276
+status: 3
+tags: []
+user_id: akash

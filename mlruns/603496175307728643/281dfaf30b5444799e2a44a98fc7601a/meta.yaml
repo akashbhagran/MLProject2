@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/281dfaf30b5444799e2a44a98fc7601a/artifacts
+deleted_time: 1710244775692
+end_time: 1710242163472
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 281dfaf30b5444799e2a44a98fc7601a
+run_name: flawless-stork-980
+run_uuid: 281dfaf30b5444799e2a44a98fc7601a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242163409
+status: 4
+tags: []
+user_id: akash

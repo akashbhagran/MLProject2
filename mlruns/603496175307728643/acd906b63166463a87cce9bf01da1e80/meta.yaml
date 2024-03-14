@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/acd906b63166463a87cce9bf01da1e80/artifacts
+deleted_time: 1710242337480
+end_time: 1710242310782
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: acd906b63166463a87cce9bf01da1e80
+run_name: stately-donkey-253
+run_uuid: acd906b63166463a87cce9bf01da1e80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242310691
+status: 3
+tags: []
+user_id: akash

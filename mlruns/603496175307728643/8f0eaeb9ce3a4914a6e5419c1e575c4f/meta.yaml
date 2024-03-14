@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/8f0eaeb9ce3a4914a6e5419c1e575c4f/artifacts
+deleted_time: 1710244775645
+end_time: 1710242294830
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 8f0eaeb9ce3a4914a6e5419c1e575c4f
+run_name: skittish-snake-336
+run_uuid: 8f0eaeb9ce3a4914a6e5419c1e575c4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242294749
+status: 3
+tags: []
+user_id: akash

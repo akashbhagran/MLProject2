@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/124f35fc04b74829a9d1ca5501b495c5/artifacts
+deleted_time: 1710242337696
+end_time: 1710242305405
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 124f35fc04b74829a9d1ca5501b495c5
+run_name: grandiose-conch-310
+run_uuid: 124f35fc04b74829a9d1ca5501b495c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242305288
+status: 3
+tags: []
+user_id: akash

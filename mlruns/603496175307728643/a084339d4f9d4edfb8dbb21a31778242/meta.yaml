@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/a084339d4f9d4edfb8dbb21a31778242/artifacts
+deleted_time: 1710242337583
+end_time: 1710242308870
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: a084339d4f9d4edfb8dbb21a31778242
+run_name: vaunted-mouse-391
+run_uuid: a084339d4f9d4edfb8dbb21a31778242
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242308738
+status: 3
+tags: []
+user_id: akash

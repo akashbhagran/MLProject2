@@ -1,0 +1,15 @@
+FROM continuumio/miniconda3:latest
+
+RUN conda create -n run_env python=3.11.5 -y
+
+ENV PATH /opt/conda/envs/run/bin:$PATH
+
+COPY ./run ./run
+
+RUN pip install -r ./run/requirements.txt
+
+WORKDIR /run
+
+SHELL ["conda", "run", "--name", "run_env", "/bin/bash", "-c"]
+
+CMD ["conda", "run", "--name", "run_env", "python", "rummod2.py"]

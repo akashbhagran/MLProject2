@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/975bac58591047789fa74bc072cb18fd/artifacts
+deleted_time: 1710242337871
+end_time: 1710242300969
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 975bac58591047789fa74bc072cb18fd
+run_name: colorful-sow-430
+run_uuid: 975bac58591047789fa74bc072cb18fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242300870
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/f6769652e7dd49a7a1a4e4954d0db3ec/artifacts
+deleted_time: 1710242337682
+end_time: 1710242305959
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: f6769652e7dd49a7a1a4e4954d0db3ec
+run_name: abundant-jay-511
+run_uuid: f6769652e7dd49a7a1a4e4954d0db3ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242305852
+status: 3
+tags: []
+user_id: akash

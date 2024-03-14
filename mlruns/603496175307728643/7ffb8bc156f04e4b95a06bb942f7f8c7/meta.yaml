@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/7ffb8bc156f04e4b95a06bb942f7f8c7/artifacts
+deleted_time: 1710242338102
+end_time: 1710242298245
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 7ffb8bc156f04e4b95a06bb942f7f8c7
+run_name: hilarious-fox-444
+run_uuid: 7ffb8bc156f04e4b95a06bb942f7f8c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242298172
+status: 3
+tags: []
+user_id: akash

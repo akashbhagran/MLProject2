@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/7908efb58f184a2d9568b3ad120fd07f/artifacts
+deleted_time: 1710244775502
+end_time: 1710244637469
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 7908efb58f184a2d9568b3ad120fd07f
+run_name: melodic-donkey-767
+run_uuid: 7908efb58f184a2d9568b3ad120fd07f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710244637131
+status: 4
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/15e8990cba65476b89e43fe653065d54/artifacts
+deleted_time: 1710242337918
+end_time: 1710242300603
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 15e8990cba65476b89e43fe653065d54
+run_name: nosy-mare-8
+run_uuid: 15e8990cba65476b89e43fe653065d54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242300488
+status: 3
+tags: []
+user_id: akash

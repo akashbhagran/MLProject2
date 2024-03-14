@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/76ba836db39044ecb7da0302a8dc09bf/artifacts
+deleted_time: 1710242337608
+end_time: 1710242308096
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 76ba836db39044ecb7da0302a8dc09bf
+run_name: calm-duck-576
+run_uuid: 76ba836db39044ecb7da0302a8dc09bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242307972
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/a1646676a4854b43931666416c25cdc2/artifacts
+deleted_time: 1710242337637
+end_time: 1710242307224
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: a1646676a4854b43931666416c25cdc2
+run_name: salty-fly-256
+run_uuid: a1646676a4854b43931666416c25cdc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242307144
+status: 3
+tags: []
+user_id: akash

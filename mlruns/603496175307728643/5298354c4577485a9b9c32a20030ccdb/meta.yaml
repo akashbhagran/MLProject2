@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/5298354c4577485a9b9c32a20030ccdb/artifacts
+deleted_time: 1710242337955
+end_time: 1710242300083
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 5298354c4577485a9b9c32a20030ccdb
+run_name: omniscient-koi-539
+run_uuid: 5298354c4577485a9b9c32a20030ccdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242299989
+status: 3
+tags: []
+user_id: akash

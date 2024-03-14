@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/01c70b5fda6443bfa9b51e8b877b1c82/artifacts
+deleted_time: 1710242338054
+end_time: 1710242298870
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 01c70b5fda6443bfa9b51e8b877b1c82
+run_name: fun-zebra-833
+run_uuid: 01c70b5fda6443bfa9b51e8b877b1c82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242298799
+status: 3
+tags: []
+user_id: akash

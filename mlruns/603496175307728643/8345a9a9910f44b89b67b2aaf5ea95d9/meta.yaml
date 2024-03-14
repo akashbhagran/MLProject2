@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/8345a9a9910f44b89b67b2aaf5ea95d9/artifacts
+deleted_time: 1710242337652
+end_time: 1710242306859
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 8345a9a9910f44b89b67b2aaf5ea95d9
+run_name: sneaky-horse-139
+run_uuid: 8345a9a9910f44b89b67b2aaf5ea95d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242306759
+status: 3
+tags: []
+user_id: akash

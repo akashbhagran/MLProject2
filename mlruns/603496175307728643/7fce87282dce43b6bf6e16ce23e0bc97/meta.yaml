@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/7fce87282dce43b6bf6e16ce23e0bc97/artifacts
+deleted_time: 1710244775564
+end_time: 1710242296397
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 7fce87282dce43b6bf6e16ce23e0bc97
+run_name: clean-grouse-65
+run_uuid: 7fce87282dce43b6bf6e16ce23e0bc97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242296318
+status: 3
+tags: []
+user_id: akash

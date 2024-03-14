@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/0f09191c4ae14b728c590d117a136806/artifacts
+deleted_time: 1710242338123
+end_time: 1710242297930
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 0f09191c4ae14b728c590d117a136806
+run_name: likeable-owl-918
+run_uuid: 0f09191c4ae14b728c590d117a136806
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242297843
+status: 3
+tags: []
+user_id: akash

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/cf004ca8a9764b039a25ec4e35790e86/artifacts
+deleted_time: 1710242337427
+end_time: null
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: cf004ca8a9764b039a25ec4e35790e86
+run_name: grandiose-perch-713
+run_uuid: cf004ca8a9764b039a25ec4e35790e86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242312046
+status: 1
+tags: []
+user_id: akash

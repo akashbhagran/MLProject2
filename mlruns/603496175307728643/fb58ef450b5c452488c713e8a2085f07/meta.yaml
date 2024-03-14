@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/fb58ef450b5c452488c713e8a2085f07/artifacts
+deleted_time: 1710242337639
+end_time: 1710242307120
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: fb58ef450b5c452488c713e8a2085f07
+run_name: amusing-ox-568
+run_uuid: fb58ef450b5c452488c713e8a2085f07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242307027
+status: 3
+tags: []
+user_id: akash

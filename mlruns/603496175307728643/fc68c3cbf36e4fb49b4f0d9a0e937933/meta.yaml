@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/fc68c3cbf36e4fb49b4f0d9a0e937933/artifacts
+deleted_time: 1710242337560
+end_time: 1710242309524
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: fc68c3cbf36e4fb49b4f0d9a0e937933
+run_name: secretive-goat-196
+run_uuid: fc68c3cbf36e4fb49b4f0d9a0e937933
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242309409
+status: 3
+tags: []
+user_id: akash

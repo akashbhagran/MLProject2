@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/07199f1bf6bc463899b9a3b521046bc2/artifacts
+deleted_time: 1710244775572
+end_time: 1710242296294
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 07199f1bf6bc463899b9a3b521046bc2
+run_name: flawless-cub-882
+run_uuid: 07199f1bf6bc463899b9a3b521046bc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242296222
+status: 3
+tags: []
+user_id: akash

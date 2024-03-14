@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/3401993727ca43ca94e2d11fa836dfb6/artifacts
+deleted_time: 1710242337689
+end_time: 1710242305675
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 3401993727ca43ca94e2d11fa836dfb6
+run_name: exultant-steed-304
+run_uuid: 3401993727ca43ca94e2d11fa836dfb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242305580
+status: 3
+tags: []
+user_id: akash

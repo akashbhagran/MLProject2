@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/19a0f0ea34734d44ae2bf6d3baac55bf/artifacts
+deleted_time: 1710242337447
+end_time: 1710242311700
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 19a0f0ea34734d44ae2bf6d3baac55bf
+run_name: gregarious-skunk-56
+run_uuid: 19a0f0ea34734d44ae2bf6d3baac55bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242311571
+status: 3
+tags: []
+user_id: akash

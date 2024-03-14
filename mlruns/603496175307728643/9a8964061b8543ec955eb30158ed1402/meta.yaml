@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603496175307728643/9a8964061b8543ec955eb30158ed1402/artifacts
+deleted_time: 1710242337449
+end_time: 1710242311546
+entry_point_name: ''
+experiment_id: '603496175307728643'
+lifecycle_stage: deleted
+run_id: 9a8964061b8543ec955eb30158ed1402
+run_name: defiant-sloth-644
+run_uuid: 9a8964061b8543ec955eb30158ed1402
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710242311449
+status: 3
+tags: []
+user_id: akash
