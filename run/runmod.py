@@ -1,5 +1,4 @@
 from sklearn.linear_model import LogisticRegression
-import matplotlib.pyplot as plt
 import pandas as pd
 import mlflow.pyfunc
 import os
@@ -10,7 +9,6 @@ import time
 import redis
 import os
 from mlflow.tracking import MlflowClient
-import pickle
 
 redis_host = os.getenv('REDIS_HOST')
 r = redis.Redis(host=redis_host, decode_responses=True)
@@ -28,13 +26,6 @@ if __name__ == '__main__':
     logreg = model
     scaler = MinMaxScaler()
 
-    #path = 'mlartifacts' + meta[0].source.split(':')[1] + '/model.pkl'
-    #scaler = MinMaxScaler()
-    
-    #with open(path, 'rb') as f:
-    #    pickled_model = pickle.load(f)
-
-    #logreg = pickled_model
     scores = []
     iteration = 0
 
