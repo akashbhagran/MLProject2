@@ -1,0 +1,75 @@
+version: '3.9'
+services:
+
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  sim:
+    build:
+      context: ./simulate
+      dockerfile: Dockerfile_simulate
+    volumes:
+      - shared-data:/app/data
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+  
+  mlflow:
+    build:
+      context: ./mlflow
+      dockerfile: Dockerfile_m
+    command: mlflow server --host 0.0.0.0 --port 5000
+    volumes:
+      - mlflow-shared:/mlartifacts
+    ports:
+      - "5000:5000"
+
+  train:
+    build:
+      context: ./train
+      dockerfile: Dockerfile_train
+    volumes:
+      - shared-data:/app/data
+      - mlflow-shared:/mlartifacts
+    depends_on:
+      - redis
+      - mlflow
+    environment:
+      - REDIS_HOST=redis
+
+  run:
+    build:
+      context: ./run
+      dockerfile: Dockerfile_run
+    volumes:
+      - shared-data:/app/data
+      - mlflow-shared:/mlartifacts
+      
+    depends_on:
+      - redis
+      - sim
+      - mlflow
+    environment:
+      - REDIS_HOST=redis
+
+  jupyter:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile_j
+    volumes:
+      - jovyan:/home/jovyan/work
+      - mlflow-shared:/mlartifacts
+      - shared-data:/app/data
+    ports:
+      - 8888:8888
+    depends_on:
+      - mlflow
+
+volumes:
+  shared-data:
+  mlflow-shared:
+  jovyan:

@@ -2,7 +2,6 @@
 data.py
 This module loads in data.
 """
-import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
@@ -10,8 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 class get_data():
 
-    def __init__(self, path: str = 'data/fruit_data_with_colors.txt') -> None:
-        os.chdir('./')
+    def __init__(self, path: str = 'fruit_data_with_colors.txt') -> None:
         fruits = pd.read_table(path)
         feature_names = ['mass', 'width', 'height', 'color_score']
         self.X = fruits[feature_names]
