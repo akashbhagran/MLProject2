@@ -1,15 +1,11 @@
-FROM continuumio/miniconda3:latest
+FROM python:3.9
 
-RUN conda create -n simulate_env python=3.11.5 -y
+WORKDIR /app
 
-ENV PATH /opt/conda/envs/simulate_env/bin:$PATH
+COPY . .
 
-COPY ./simulate ./simulate
+RUN pwd
 
-RUN pip install -r ./simulate/requirements.txt
+RUN pip install -r requirements.txt
 
-WORKDIR /simulate
-
-SHELL ["conda", "run", "--name", "simulate_env", "/bin/bash", "-c"]
-
-CMD ["conda", "run", "--name", "simulate_env", "python", "generate_data2.py"]
+CMD ["python", "generate_data.py"]

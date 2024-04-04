@@ -1,8 +1,13 @@
 import numpy as np
 import sqlite3 as sql
 import time
+import redis
+import os
 
-conn = sql.connect('fruits.db')
+redis_host = os.getenv('REDIS_HOST')
+r = redis.Redis(host = redis_host)
+
+conn = sql.connect('data/fruits.db')
 
 cursor = conn.cursor()
 
@@ -33,6 +38,7 @@ def delete_oldest_fruit():
 
 # Function to create a new fruit and manage FIFO
 def make_fruit():
+
     r = np.random.randint(1, 5)
 
     if get_fruit_count() >= 3000:
@@ -71,10 +77,16 @@ def get_fruit_count():
 # Continuously insert fruits into the database
 
 if __name__ == '__main__':
+
     while True:
+        
+        #if not r.exists('write_lock'):
+        #r.set('write_lock','true')
         make_fruit()
         conn.commit()
-        time.sleep(0.25)  # Adjust the delay as needed
+        #r.delete('write_lock')
+
+        time.sleep(5)
 
     # Close the connection
-    conn.close()
+    #conn.close()

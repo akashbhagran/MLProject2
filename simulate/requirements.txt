@@ -1,3 +1,2 @@
 numpy==1.26.4
-celery==4.4.0
 redis==5.0.3

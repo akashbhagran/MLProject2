@@ -1,36 +1,75 @@
-version: '3.8'
+version: '3.9'
 services:
+
   redis:
-    image: redis:alpine
+    image: redis
+    container_name: redis
     ports:
       - "6379:6379"
 
-  celery_worker:
-    build: ./simulate  # Path to the directory with the Dockerfile for Celery
+  sim:
+    build:
+      context: ./simulate
+      dockerfile: Dockerfile_simulate
     volumes:
-      - ./common:/app/common  # Ensure tasks.py is accessible
-      - ./simulate:/app/simulate  # Ensure your data generator script is accessible
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
+      - shared-data:/app/data
     depends_on:
       - redis
-
-  data_generator:
-    build: ./simulate
-    command: python simulate/data_generator_script.py  # Adjust this to your actual script name
+    environment:
+      - REDIS_HOST=redis
+  
+  mlflow:
+    build:
+      context: ./mlflow
+      dockerfile: Dockerfile_m
+    command: mlflow server --host 0.0.0.0 --port 5000
     volumes:
-      - ./common:/app/common
-      - ./simulate:/app/simulate
+      - mlflow-shared:/mlartifacts
+    ports:
+      - "5000:5000"
 
-  data_reader:
-    build: ./run
-    command: python run/data_reader_script.py  # Adjust this to your actual script name
+  train:
+    build:
+      context: ./train
+      dockerfile: Dockerfile_train
     volumes:
-      - ./common:/app/common
-      - ./run:/app/run
-      - ./data:/app/data
+      - shared-data:/app/data
+      - mlflow-shared:/mlartifacts
     depends_on:
-      - celery_worker
+      - redis
+      - mlflow
+    environment:
+      - REDIS_HOST=redis
 
+  run:
+    build:
+      context: ./run
+      dockerfile: Dockerfile_run
+    volumes:
+      - shared-data:/app/data
+      - mlflow-shared:/mlartifacts
+      
+    depends_on:
+      - redis
+      - sim
+      - mlflow
+    environment:
+      - REDIS_HOST=redis
 
+  jupyter:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile_j
+    volumes:
+      - jovyan:/home/jovyan/work
+      - mlflow-shared:/mlartifacts
+      - shared-data:/app/data
+    ports:
+      - 8888:8888
+    depends_on:
+      - mlflow
 
+volumes:
+  shared-data:
+  mlflow-shared:
+  jovyan:
