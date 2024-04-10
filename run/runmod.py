@@ -30,6 +30,8 @@ if __name__ == '__main__':
     scores = []
     iteration = 0
 
+    time.sleep(15)
+
     while(True):
 
         #if not r.exists('write_lock'):

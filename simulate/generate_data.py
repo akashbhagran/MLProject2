@@ -57,13 +57,13 @@ def make_fruit():
         mandarin_colour = np.random.uniform(0.77, 0.81)
         insert_fruit(mandarin_mass, mandarin_width, mandarin_height, mandarin_colour, 'mandarin', 2)
     elif r == 3:
-        orange_mass = np.random.normal(150, 50)
+        orange_mass = np.random.normal(180, 50)
         orange_width = np.random.normal(7.2, 0.8)
         orange_height = np.random.normal(7.0, 10)
         orange_colour = np.random.uniform(0.72, 0.82)
         insert_fruit(orange_mass, orange_width, orange_height, orange_colour, 'orange', 3)
     elif r == 4:
-        lemon_mass = np.random.uniform(120, 200)
+        lemon_mass = np.random.uniform(50, 200)
         lemon_width = np.random.normal(6.6, 0.6)
         lemon_height = np.random.uniform(7.5, 10.5)
         lemon_colour = np.random.normal(0.72, 0.82)
@@ -78,13 +78,14 @@ def get_fruit_count():
 
 if __name__ == '__main__':
 
+    for i in range(0,1000):
+
+        make_fruit()
+
     while True:
         
-        #if not r.exists('write_lock'):
-        #r.set('write_lock','true')
         make_fruit()
         conn.commit()
-        #r.delete('write_lock')
 
         time.sleep(5)
 
