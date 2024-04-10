@@ -24,6 +24,7 @@ if __name__ == '__main__':
     model_uri = f"models:/{model_name}/{model_version}"
     model = mlflow.pyfunc.load_model(model_uri)
     logreg = model
+    
     scaler = MinMaxScaler()
 
     scores = []
