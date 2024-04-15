@@ -9,6 +9,7 @@ import time
 import redis
 import os
 from mlflow.tracking import MlflowClient
+from sklearn.metrics import accuracy_score
 
 redis_host = os.getenv('REDIS_HOST')
 r = redis.Redis(host=redis_host, decode_responses=True)
@@ -49,9 +50,14 @@ if __name__ == '__main__':
         y = np.array(y).astype('int32')
         X = scaler.fit_transform(np.array(X))
         out = logreg.predict(X)
+        score = accuracy_score(out, y)
+
         #score = logreg.score(X, y)
 
         #scores.append(score)
-        print(out, flush = True)
+        
+
+
+        print(out, score, flush = True)
 
         time.sleep(8)
