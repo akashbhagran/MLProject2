@@ -6,6 +6,7 @@ jobs:
     container: docker://ghcr.io/iterative/cml:0-dvc2-base1
     steps:
       - uses: actions/checkout@v4
+      - run: ldd --version
       - uses: actions/setup-python@v5
         with:
           python-version: '3.9' 
