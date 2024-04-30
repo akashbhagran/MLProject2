@@ -24,6 +24,7 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r .github/workflows/requirements.txt
+          mlflow server --host 0.0.0.0 --port 5000
           cd train
           python train.py
       - name: Write CML report
