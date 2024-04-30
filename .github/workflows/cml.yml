@@ -25,7 +25,7 @@ jobs:
           # Your ML workflow goes here
           pip install -r .github/workflows/requirements.txt
           cd train
-          python train/train.py
+          python train.py
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
