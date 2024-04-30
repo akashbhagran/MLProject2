@@ -4,7 +4,7 @@ jobs:
   run:
     services:
       mlflow:
-        image: mlflow/mlflow
+        image: ghcr.io/mlflow/mlflow:v2.0.1
         ports:
           - 5000:5000
         options: >-
