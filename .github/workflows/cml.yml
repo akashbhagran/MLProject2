@@ -24,6 +24,7 @@ jobs:
         run: |
           # Your ML workflow goes here
           pip install -r .github/workflows/requirements.txt
+          cd train
           python train/train.py
       - name: Write CML report
         env:
