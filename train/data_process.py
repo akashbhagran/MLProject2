@@ -11,9 +11,9 @@ class get_data():
 
     def __init__(self, path: str = 'fruit_data_with_colors.txt') -> None:
         fruits = pd.read_table(path)
-        feature_names = ['mass', 'width', 'height', 'color_score']
+        feature_names = ['MASS', 'WIDTH', 'HEIGHT', 'COLOUR', 'FRUITLABEL']
         self.X = fruits[feature_names]
-        self.y = fruits['fruit_label']
+        self.y = fruits['FRUITLABEL']
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y, random_state=0)
         
         

@@ -23,9 +23,6 @@ logreg.fit(X_train, y_train)
 pickle.dump(logreg, open('model.sav', 'wb'))
 logreg = pickle.load(open('model.sav', 'rb'))
 
-print(X_train)
-print('HERE',logreg.predict(X_train))
-
 current_dateTime = datetime.now()
 name = "LogRegFruits"
 
