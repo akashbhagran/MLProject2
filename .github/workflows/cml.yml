@@ -4,10 +4,13 @@ on:
   push:
 
 jobs:
+
   train-and-report:
+
     runs-on: ubuntu-latest
 
     steps:
+      
       - uses: actions/checkout@v3
       
       # Uncomment the following lines if NodeJS setup is required
@@ -24,6 +27,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r .github/workflows/requirements.txt
+      
+      - name: Start mlflow server
+        run: |
+          mlflow server --port 5000
 
       - name: Train model
         run: |
