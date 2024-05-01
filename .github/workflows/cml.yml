@@ -9,14 +9,22 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      mlflow:
+        image:
+          context: ./mlflow
+          dockerfile: Dockerfile_m
+        ports:
+          - 5000:5000
+        options: >-
+          --workdir /github/workspace
+          --entrypoint ""
+          --env-file $GITHUB_ENV
+        command: mlflow server --host 0.0.0.0 --port 5000
+
     steps:
-      
+
       - uses: actions/checkout@v3
-      
-      # Uncomment the following lines if NodeJS setup is required
-      # - uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '16'
 
       - uses: actions/setup-python@v4
         with:
@@ -28,10 +36,6 @@ jobs:
         run: |
           pip install -r .github/workflows/requirements.txt
       
-      - name: Start mlflow server
-        run: |
-          mlflow server --port 5000
-
       - name: Train model
         run: |
           cd train
