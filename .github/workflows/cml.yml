@@ -18,18 +18,25 @@ jobs:
         
 
     steps:
-
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-python@v4
+      - name: checkout  
+        uses: actions/checkout@v3
+      
+      - name: set up python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
-      - uses: iterative/setup-cml@v1
-
+         
       - name: Install dependencies
-        run: |
-          pip install -r .github/workflows/requirements.txt
+        uses: iterative/setup-cml@v1
+      -  run: |
+          pip install -r .github/workflows/requirements.txt         
+      
+      - name: dockercompose
+        uses: hoverkraft-tech/compose-action@v1.5.1
+        with:
+          compose-file: "./docker/docker-compose.yml"
+          services: |
+            mlflow
       
       - name: Train model
         run: |
