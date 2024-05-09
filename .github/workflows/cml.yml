@@ -33,7 +33,8 @@ jobs:
 
       - name: Train model
         run: |
-          python train/train.py
+          cd train
+          python train.py
 
       - name: Write CML report
         env:
