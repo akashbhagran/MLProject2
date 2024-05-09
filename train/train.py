@@ -23,6 +23,10 @@ logreg.fit(X_train, y_train)
 pickle.dump(logreg, open('model.sav', 'wb'))
 logreg = pickle.load(open('model.sav', 'rb'))
 
+acc = logreg.score(X_test,y_test)
+with open("metrics.txt", "w") as outfile:
+    outfile.write(acc)
+
 current_dateTime = datetime.now()
 name = "LogRegFruits"
 
