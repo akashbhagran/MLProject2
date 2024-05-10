@@ -35,6 +35,11 @@ jobs:
         run: |
           cd train
           python train.py
+        
+      - run: |
+          cd train
+          pwd
+          ls
 
       - name: Write CML report
         env:
