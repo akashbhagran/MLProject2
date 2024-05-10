@@ -40,5 +40,5 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cat results.txt >> report.md
+          cat train/results.txt >> report.md
           cml comment create report.mdo
