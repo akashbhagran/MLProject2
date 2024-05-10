@@ -3,6 +3,10 @@ name: CML Workflow
 on:
   push:
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
 
   train-and-report:
