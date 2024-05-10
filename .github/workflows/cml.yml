@@ -29,21 +29,25 @@ jobs:
           compose-file: "docker-compose.yaml"
           services: |
             mlflow
-      - run: pwd
 
-      - name: Train model
-        run: |
-          cd train
-          python train.py
-        
       - run: |
           cd train
           pwd
           ls
 
-      - name: Write CML report
+      - name: Train model and write report
+        run: |
+          cd train
+          python train.py
+          cat metrics.txt >> report.md
+          echo '![](./plot.png "Confusion Matrix")' >> report.md
+          cml comment create report.md
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      """      
+      - name: Write CML report
         run: |
           cat train/results.txt >> report.md
           cml comment create report.mdo
+      """
