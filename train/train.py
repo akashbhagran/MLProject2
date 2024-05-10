@@ -25,7 +25,7 @@ logreg = pickle.load(open('model.sav', 'rb'))
 
 acc = logreg.score(X_test,y_test)
 with open("metrics.txt", "w") as outfile:
-    outfile.write(acc)
+    outfile.write(str(acc))
 
 current_dateTime = datetime.now()
 name = "LogRegFruits"
