@@ -45,9 +45,9 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      """      
-      - name: Write CML report
-        run: |
-          cat train/results.txt >> report.md
-          cml comment create report.mdo
-      """
+      #"""      
+      #- name: Write CML report
+      #  run: |
+      #    cat train/results.txt >> report.md
+      #    cml comment create report.mdo
+      #"""
