@@ -42,4 +42,4 @@ jobs:
         run: |
           cd train
           cat results.txt >> report.md
-          cml comment create report.md
+          cml comment create report.mdo
