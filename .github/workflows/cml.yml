@@ -35,11 +35,14 @@ jobs:
           pwd
           ls
 
-      - name: Train model and write report
+      - name: Train model
         run: |
           cd train
           python train.py
-          cat metrics.txt >> report.md
+      
+      - name: Write metrics
+        run: |
+          cat train/metrics.txt >> report.md
           echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
         env:
