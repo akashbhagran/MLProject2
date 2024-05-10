@@ -24,7 +24,7 @@ pickle.dump(logreg, open('model.sav', 'wb'))
 logreg = pickle.load(open('model.sav', 'rb'))
 
 acc = logreg.score(X_test,y_test)
-with open("train/metrics.txt", "w") as outfile:
+with open("metrics.txt", "w") as outfile:
     outfile.write(acc)
 
 current_dateTime = datetime.now()
