@@ -48,14 +48,7 @@ jobs:
         run: |
           cat train/metrics.txt >> report.md
           cml comment create report.md
-        #  echo '![](./plot.png "Confusion Matrix")' >> report.md
-        #  cml comment create report.md
+          echo '![](./plot.png "Confusion Matrix")' >> report.md
+          cml comment create report.md
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      #"""      
-      #- name: Write CML report
-      #  run: |
-      #    cat train/results.txt >> report.md
-      #    cml comment create report.mdo
-      #"""
