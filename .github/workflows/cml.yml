@@ -11,6 +11,8 @@ jobs:
 
   train-and-report:
 
+    permissions: write-all
+
     runs-on: ubuntu-latest
         
     steps:
