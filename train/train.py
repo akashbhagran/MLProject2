@@ -31,7 +31,7 @@ with open("metrics.txt", "w") as outfile:
 
 cm = confusion_matrix(y_test,y_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm).plot()
-disp.figure_.savefig('train/confusion_matrix.png')
+disp.figure_.savefig('confusion_matrix.png')
 
 current_dateTime = datetime.now()
 name = "LogRegFruits"
