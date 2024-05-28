@@ -30,7 +30,7 @@ with open("metrics.txt", "w") as outfile:
     outfile.write("Accuracy: " + str(acc))
 
 cm = confusion_matrix(y_test,y_pred)
-disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm).plot()
 disp.figure_.savefig('confusion_matrix.png')
 
 current_dateTime = datetime.now()
