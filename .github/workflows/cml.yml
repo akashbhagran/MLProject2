@@ -48,6 +48,8 @@ jobs:
             pip install -r .github/workflows/requirements.txt 
             cd train
             python train.py
+
+            cd ..
             cat train/metrics.txt >> report.md
             echo '![](./plot.png)' >> report.md
             echo "Report Content:"
