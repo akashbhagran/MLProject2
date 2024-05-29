@@ -22,12 +22,7 @@ jobs:
       - name: set up python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-         
-      - name: Install dependencies
-        uses: iterative/setup-cml@v1
-      -  run: |
-          pip install -r .github/workflows/requirements.txt         
+          python-version: '3.10'        
       
       - name: dockercompose
         uses: hoverkraft-tech/compose-action@v1.5.1
@@ -36,10 +31,10 @@ jobs:
           services: |
             mlflow
 
-      - run: |
-          cd train
-          pwd
-          ls
+      - name: Install dependencies
+        uses: iterative/setup-cml@v1
+      -  run: |
+          pip install -r .github/workflows/requirements.txt 
 
       - name: Train model
         run: |
@@ -48,13 +43,15 @@ jobs:
 
       
       - name: Write metrics
-        run: |
-          cd train
-          python train.py
-          cat train/metrics.txt >> report.md
-          echo '![](./plot.png "Confusion Matrix")' >> report.md
-          echo "Report Content:"
-          cat report.md
-          cml comment create report.md
-        env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: iterative/setup-cml@v1
+      -   run: |
+            pip install -r .github/workflows/requirements.txt 
+            cd train
+            python train.py
+            cat train/metrics.txt >> report.md
+            echo '![](./plot.png)' >> report.md
+            echo "Report Content:"
+            cat report.md
+            cml comment create report.md
+          env:
+            REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
