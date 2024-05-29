@@ -45,6 +45,7 @@ jobs:
         run: |
           cd train
           python train.py
+          ls -R
 
       
       - name: Write metrics
