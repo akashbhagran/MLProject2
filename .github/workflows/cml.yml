@@ -50,7 +50,6 @@ jobs:
       - name: Write metrics
         run: |
           cat train/metrics.txt >> report.md
-          cml comment create report.md
           echo '![](./confusion_matrix.png "Confusion Matrix")' >> report.md
           cml comment create report.md
         env:
