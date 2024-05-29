@@ -45,13 +45,14 @@ jobs:
         run: |
           cd train
           python train.py
-          ls -R
 
       
       - name: Write metrics
         run: |
+          cd train
+          python train.py
           cat train/metrics.txt >> report.md
-          echo '![](train/confusion_matrix.png "Confusion Matrix")' >> report.md
+          echo '![](./plot.png "Confusion Matrix")' >> report.md
           echo "Report Content:"
           cat report.md
           cml comment create report.md
