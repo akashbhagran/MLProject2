@@ -50,9 +50,10 @@ jobs:
       
       - name: Write metrics
         run: |
-          find ~ ./train
           cat train/metrics.txt >> report.md
           echo '![](train/confusion_matrix.png "Confusion Matrix")' >> report.md
+          ech "Report Content:"
+          cat report.md
           cml comment create report.md
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
