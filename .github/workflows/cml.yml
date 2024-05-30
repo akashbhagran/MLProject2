@@ -51,7 +51,6 @@ jobs:
 
             cd ..
             cat train/metrics.txt >> report.md
-            echo "![](./plot.png)" >> report.md
             cml comment create report.md
           env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
