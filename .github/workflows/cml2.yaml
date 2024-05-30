@@ -23,9 +23,9 @@ jobs:
 
       - run: |
           pip install -r .github/workflows/requirements.txt
-          python train.py  # generate plot.png
+          python train/train.py  # generate plot.png
           # Create CML report
-          cat metrics.txt >> report.md
+          cat train/metrics.txt >> report.md
         
           echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
