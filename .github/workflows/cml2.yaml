@@ -11,11 +11,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Set up Docker Compose
-        uses: docker/compose-action@v2
+      - name: dockercompose
+        uses: hoverkraft-tech/compose-action@v1.5.1
         with:
-          files: docker-compose.yaml
-          services: mlflow
+            compose-file: "docker-compose.yaml"
+            services: |
+              mlflow
 
       - name: Wait for MLflow to be ready
         run: |
