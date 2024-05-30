@@ -11,12 +11,10 @@ jobs:
 
     steps:
 
-      - name: dockercompose
-        uses: hoverkraft-tech/compose-action@v1.5.1
-        with:
-          compose-file: "docker-compose.yaml"
-          services: |
-            mlflow
+      - name: Set up Docker Compose for MLflow
+        run: |
+          docker-compose -f docker-compose.yaml up -d mlflow
+        shell: bash
 
       - uses: actions/checkout@v3
         with:
@@ -34,3 +32,4 @@ jobs:
           cml comment create report.md
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MLFLOW_TRACKING_URI: http://mlflow:5000
