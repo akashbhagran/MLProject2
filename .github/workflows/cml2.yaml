@@ -12,15 +12,20 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Docker Compose
-        uses: hoverkraft-tech/compose-action@v1.5.1
+        uses: docker/compose-action@v2
         with:
-          compose-file: "docker-compose.yaml"
-          services: |
-            mlflow
+          files: docker-compose.yaml
+          services: mlflow
+
+      - name: Wait for MLflow to be ready
+        run: |
+          # Wait for a few seconds to ensure MLflow server is up and running
+          sleep 15
+          # Check if MLflow server is reachable
+          curl -f http://mlflow:5000/health
 
       - name: Install dependencies
-        run: |
-          pip install -r .github/workflows/requirements.txt
+        run: pip install -r .github/workflows/requirements.txt
 
       - name: Run training script
         run: |
