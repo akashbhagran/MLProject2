@@ -40,6 +40,8 @@ jobs:
         run: |
           cd train
           python train.py
+        env:
+          MLFLOW_TRACKING_URI: http://mlflow:5000
 
       
       - name: Write metrics
