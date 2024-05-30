@@ -49,8 +49,9 @@ jobs:
             cd train
             python train.py
 
-            cd ..
+            cd . .
             cat train/metrics.txt >> report.md
             cml comment create report.md
           env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            MLFLOW_TRACKING_URI: http://mlflow:5000
