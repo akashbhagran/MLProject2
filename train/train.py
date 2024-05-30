@@ -8,7 +8,7 @@ from mlflow.models import infer_signature
 import pickle
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
-mlflow.set_tracking_uri("http://mlflow:5000")
+mlflow.set_tracking_uri("http://localhost:5000")
 
 d = get_data()
 d.transform()
