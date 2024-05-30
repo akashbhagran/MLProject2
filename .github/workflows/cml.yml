@@ -31,6 +31,11 @@ jobs:
           services: |
             mlflow
 
+      - name: Set up Docker Compose
+        run: |
+          docker-compose -f docker-compose.yaml up -d mlflow
+          docker-compose ps
+
       - name: Install dependencies
         uses: iterative/setup-cml@v1
       -  run: |
@@ -42,6 +47,8 @@ jobs:
           python train.py
         env:
           MLFLOW_TRACKING_URI: http://mlflow:5000
+
+          
 
       
       - name: Write metrics
