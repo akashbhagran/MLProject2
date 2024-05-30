@@ -10,10 +10,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - run: |
           pip install -r .github/workflows/requirements.txt
-          python train/train.py  # generate plot.png
+          cd train
+          python train.py  # generate plot.png
           # Create CML report
-          # comment
           cat metrics.txt >> report.md
+          cd ..
           echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
         env:
