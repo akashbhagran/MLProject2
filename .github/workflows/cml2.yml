@@ -2,12 +2,25 @@ name: CML
 on: [push]
 jobs:
   train-and-report:
+
     runs-on: ubuntu-latest
+
     container: docker://ghcr.io/iterative/cml:0-dvc2-base1
+
     steps:
-      - uses: actions/checkout@v3
+      - name: dockercompose
+        uses: hoverkraft-tech/compose-action@v1.5.1
         with:
+          compose-file: "docker-compose.yaml"
+          services: |
+            mlflow
+
+      - uses: actions/checkout@v3
+
+        with:
+
           ref: ${{ github.event.pull_request.head.sha }}
+
       - run: |
           pip install -r .github/workflows/requirements.txt
           python train.py  # generate plot.png
