@@ -2,34 +2,33 @@ name: CML
 on: [push]
 jobs:
   train-and-report:
-
     permissions: write-all
-
     runs-on: ubuntu-latest
 
-    container: docker://ghcr.io/iterative/cml:0-dvc2-base1
-
     steps:
-
-      - name: Set up Docker Compose for MLflow
-        run: |
-          docker-compose -f docker-compose.yaml up -d mlflow
-        shell: bash
-
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - run: |
+      - name: Set up Docker
+        run: |
+          docker build -t dm -f mlflow/Dockerfile_m .
+          docker run -d -p 5000:5000 --name dm dm
+
+      - name: Install dependencies
+        run: |
           pip install -r .github/workflows/requirements.txt
+
+      - name: Run training script
+        run: |
           cd train
           python train.py  # generate plot.png
           # Create CML report
           cat metrics.txt >> report.md
-          cd . .
-
+          cd ..
           echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MLFLOW_TRACKING_URI: http://mlflow:5000
+          MLFLOW_TRACKING_URI: http://localhost:5000
