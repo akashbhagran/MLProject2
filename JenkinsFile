@@ -1,5 +1,5 @@
 // Script //
-node { ①
-echo 'Hello World' ②
+node {
+echo 'Hello World'
 }
 // Declarative not yet implemented //
