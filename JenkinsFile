@@ -1,0 +1,5 @@
+// Script //
+node { ①
+echo 'Hello World' ②
+}
+// Declarative not yet implemented //
