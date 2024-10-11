@@ -1,5 +1,34 @@
-// Script //
-node {
-echo 'Hello World'
-}
-// Declarative not yet implemented //
+Jenkinsfile (Declarative Pipeline)
+
+pipeline {
+    agent any
+     
+    stages {
+    	
+    	stage('Hello') { 
+            steps {
+            	// hello world
+                echo hello world
+            }
+        }
+        
+        stage('Test') {
+            withPythonEnv('python3') {
+                sh 'pip install -r requirements
+                sh 'python --version'
+            }
+        }
+        
+        stage('Build') { 
+            steps {
+                // 
+            }
+        }
+        
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
+}                                                                                                                                                        
