@@ -24,8 +24,8 @@ pipeline {
         
         stage('Build') { 
             steps {
-       		  docker build -t myimage .
-       		  docker run -it --rm myimage bash -c "python --version"
+       		  sh 'docker build -t myimage .'
+       		  sh 'docker run -it --rm myimage bash -c "python --version"'
 
             }
         }
