@@ -19,16 +19,16 @@ pipeline {
             }
         }
         
-        stage('Build') { 
-            steps {
-                // 
-            }
-        }
+       // stage('Build') { 
+       //     steps {
+       //         // 
+       //     }
+       // }
         
-        stage('Deploy') { 
-            steps {
-                // 
-            }
-        }
+       // stage('Deploy') { 
+       //     steps {
+       //         // 
+       //     }
+       // }
     }
 }                                                                                                                                                        
